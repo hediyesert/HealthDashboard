@@ -1,24 +1,15 @@
-//
-//  ContentView.swift
-//  HealthDashboard
-//
-//  Created by hediye sert on 16.05.2026.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        // Uygulama açıldığında direkt olarak hazırladığımız Dashboard ekranı yüklenecek
+        DashboardView()
     }
 }
 
-#Preview {
-    ContentView()
+// Xcode Önizlemesi için
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
